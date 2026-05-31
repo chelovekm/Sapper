@@ -1,0 +1,18 @@
+<Window x:Class="Sapper.HighScoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sapper"
+        mc:Ignorable="d"
+        Title="Топ лидеров" Height="400" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Топ лидеров" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 20"/>
+            
+            <ListBox x:Name="lbHighScores" Height="250" FontSize="14"/>
+            
+            <Button Content="Закрыть" Width="100" Height="30" Margin="0 20 0 0" HorizontalAlignment="Center" Click="btnClose_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
